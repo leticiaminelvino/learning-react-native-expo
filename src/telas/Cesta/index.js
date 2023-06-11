@@ -5,13 +5,13 @@ import { StyleSheet, View } from 'react-native';//sempre q usamos um componente 
 import Topo from './componentes/Topo';
 import Detalhes from './componentes/Detalhes';
 
-export default function Cesta(){ 
+export default function Cesta({topo, detalhes}){ 
     //default para que so tenha um componente
     return <>
-        <Topo/>
+        <Topo {...topo}/>
 
         <View style={estilos.cesta}> 
-        <Detalhes/>
+            <Detalhes {...detalhes}/>
         </View>
     </>
 };
