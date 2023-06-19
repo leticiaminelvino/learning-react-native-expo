@@ -17,8 +17,8 @@ export default function App() {
   if(!fonteCarregada){
     return <View/>
   }
-  return (
-    <SafeAreaView>
+  return ( //flex:1 p/ q oqseja carregado seja so o conteudo na tela no momento
+    <SafeAreaView style={{ flex:1 }}> 
       <StatusBar/>
       <Cesta {...mock} /> 
     </SafeAreaView>
